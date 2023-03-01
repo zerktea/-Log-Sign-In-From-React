@@ -12,7 +12,7 @@
 
 }
 
-input {
+input,select {
   background-color: transparent;
   border-radius: 0;
   border-width: 0;
