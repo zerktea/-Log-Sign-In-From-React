@@ -2,7 +2,7 @@ import React from "react"
 import '../index.css'
 import { FaUserAlt } from 'react-icons/fa';
 import EyePass from "./Eyepass";
-export default function Form(){
+export default function Form(props){
     const [isPass,setPass]=React.useState("password")
     const [form,setForm] =
     React.useState({
@@ -48,7 +48,7 @@ export default function Form(){
             <div className="form--header">
             
             <h2>Sign in <FaUserAlt /></h2>
-            <p>Or <a href="">login</a></p>
+            <p>Already have an acount ?<a onClick={props.switchUp}> login</a></p>
             
             <h4>Please Enter your details so sign in</h4>
             </div>
